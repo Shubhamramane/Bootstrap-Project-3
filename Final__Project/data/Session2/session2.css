@@ -1,0 +1,45 @@
+body {
+  background-color: red;
+}
+
+.main-div {
+  padding: 30px;
+  font-size: 15px;
+  font-size: true;
+  font-size: "small", "medium", "large";
+  font-size: 15px, 30px, 60px;
+}
+
+.font {
+  font-family: "Akronim";
+}
+
+.main {
+  background-color: pink;
+  padding: 20px;
+}
+
+.main .main-para {
+  color: navy;
+  border: 3px solid navy;
+}
+
+.main:hover {
+  color: black;
+}
+
+.inline {
+  background-color: #cfd;
+  padding: 30px;
+}
+
+.inline .inline-div {
+  -webkit-box-shadow: 3px 2px 2px red;
+          box-shadow: 3px 2px 2px red;
+  display: inline-block;
+  width: 25%;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 20px;
+}
+/*# sourceMappingURL=session2.css.map */

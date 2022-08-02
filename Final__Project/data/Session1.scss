@@ -1,0 +1,87 @@
+@import './_variables.scss';
+
+.navbar{
+    height:100px;
+    background-color:red;
+    color:white;
+    display:flex;
+}
+.inline{
+    display:$inline;
+}
+
+.hover{
+  height: $h-w;
+  border:$border;
+}
+
+img{
+    height: $h-w;
+}
+.hover:hover img{
+    display:$display-none;
+}
+
+p{
+    color:red;
+}
+
+.gradient-btn{
+    background-image: linear-gradient($gradient1, $gradient2);
+    margin:$space;
+    padding: $space;
+}
+
+.btn{
+    color: white;
+    padding:10px;
+    border:2px solid black;
+}
+
+.btn1{
+    background-color:$color-primary;
+    @extend .btn;
+}
+
+.btn2{
+    background-color:$color-secondary;
+    @extend .btn;
+}
+
+.btn3{
+    background-color:$color-danger;
+    @extend .btn;
+}
+
+.main{
+    background-color:#cfd;
+    padding:20px;
+
+    .d-flex{
+        background-color:sandybrown;
+        padding: 20px;
+        margin-top: 10px;
+        display: flex;
+
+        .inner-div{
+            border: 30px solid black;
+            margin-left: 10px;
+            padding: 20px;
+            text-align : center;
+
+            i{
+                color:red;
+
+                b{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+// .inline{
+//     display:display-inline;
+// }
+
+

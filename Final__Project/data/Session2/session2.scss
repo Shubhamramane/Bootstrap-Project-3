@@ -1,0 +1,51 @@
+@import'./variables';
+
+body{
+    background-color: red;
+}
+
+.main-div{
+    padding: 30px;
+    font-size: map-get($font-sizes,"small");
+    font-size: map-has-key($font-sizes,"small");
+    font-size: map-keys($font-sizes);
+    font-size: map-values($font-sizes);   
+}
+
+.font{
+    font-family: map-get($font-family,'font-family');
+}
+
+.main{
+    background-color:pink;
+    padding:20px;
+    #{&}-para{
+        color:navy;
+        border:3px solid navy;
+
+    }
+
+    &:hover{
+        color: black;
+    }
+}
+
+// mixin and include
+
+@mixin demo($shadows){
+    box-shadow: $shadows;
+    display: inline-block;
+    width: 25%;
+    border: 3px solid black;
+    padding:10px;
+    margin:20px;
+}
+
+.inline{
+    background-color: #cfd;
+    padding: 30px;
+    #{&}-div{
+        @include demo(3px 2px 2px red);
+    }
+}
+

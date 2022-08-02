@@ -1,0 +1,86 @@
+.navbar {
+  height: 100px;
+  background-color: red;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hover {
+  height: 300px;
+  border: 2px solid black;
+}
+
+img {
+  height: 300px;
+}
+
+.hover:hover img {
+  display: none;
+}
+
+p {
+  color: red;
+}
+
+.gradient-btn {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(yellow));
+  background-image: linear-gradient(red, yellow);
+  margin: 30px 60px;
+  padding: 30px 60px;
+}
+
+.btn, .btn1, .btn2, .btn3 {
+  color: white;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.btn1 {
+  background-color: pink;
+}
+
+.btn2 {
+  background-color: yellow;
+}
+
+.btn3 {
+  background-color: red;
+}
+
+.main {
+  background-color: #cfd;
+  padding: 20px;
+}
+
+.main .d-flex {
+  background-color: sandybrown;
+  padding: 20px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .d-flex .inner-div {
+  border: 30px solid black;
+  margin-left: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.main .d-flex .inner-div i {
+  color: red;
+}
+
+.main .d-flex .inner-div i b {
+  font-size: 30px;
+}
+/*# sourceMappingURL=Session1.css.map */

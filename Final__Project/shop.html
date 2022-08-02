@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shop</title>
+<style type="text/css">
+		body{
+			overflow-x: hidden;
+    }
+    #cart{
+      background-color: black;
+      color: white;
+      height: 28px;
+      width: 28px;
+      display: inline-block;
+      border-radius: 50%;
+      padding-left: 7px;
+    }
+
+	</style>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+   <script type="text/javascript"src="../js/popper.min.js"></script>
+   <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+  <div class="container-fluid img">
+    <a class="navbar-brand offset-1" href="#"><img src="skin11r.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 offset-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item gap">
+          <a  class="nav-link" href="#" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus" data-bs-content="Bottom popover"><i class="fa fa-shopping-cart" aria-hidden="true"></i><small id="output">$00</small>&nbsp<div id="cart"></div></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus" data-bs-content="Bottom popover"><i class="fa fa-search" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container cup_1">
+  <div class="row">
+    <div class="col-md-6 cup d-flex">
+      <div>
+        <img src="sh-058.jpg" class="img-fluid">
+      </div>
+      <div>
+
+        <button type="button" class="btn btn3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+        
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body cup1">
+                <img src="sh-058.jpg">
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="cup_info">
+      <i class="fa fa-star icon_fa1" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <span class="size">(1 customer review)</span></div>
+      <h1 class="py-3 px-4">Ceramic Mug</h1>
+      <h3 style="display: inline-block;">$<small id="price" class="px-4">9.50</small></h3>
+      <div class="line1"></div>
+      <p class="px-4 py-3">Phasellus leo odio, maximus a dui pellentesque, ornare tincidunt ante. Nullam venenatis tortor vitae scelerisque rhoncus. Sed ut suscipit ex, eget porta urna. Aenean tempor at ante non dapibus.</p>
+      <div class="me-auto">
+        <small class="px-4">Color</small>
+        <button type="button" class="btn-close btn_close" aria-label="Close"></button>
+        <select class="form-select" aria-label="Default select example">
+          <option>choose any option</option>
+          <option selected>Black</option>
+          <option>White</option>
+        </select>
+        <nav aria-label="Page navigation example">
+        <ul class="pagination px-4 py-3">
+        <li class="page-item"><button id="decrease"><a class="page-link" href="#">-</a></button></li>
+        <li class="page-item"><span id="counter" class="page-link">0</span></li>
+        <li class="page-item"><button id="increase"><a class="page-link" href="#">+</a></button></li>
+        <span class="px-3"><button onclick="fun1();" type="button" class="btn btn6">Add to cart</button></span>
+        </ul>
+        </nav>
+        <p class="p2 px-4">Category: Goods SKU: dt-016</p>
+        <small class="px-4">Tags:</small>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <a href="#">ceramic</a>
+          <a href="#">kitchen</a>
+          <a href="#">mug</a>
+        </div>
+        <div>
+        <h6 class="py-3 px-4"><b>Share this product</b></h6>
+        <div class="btn7 px-4">
+        <button type="button" class="btn"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+        <button type="button" class="btn"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+        <button type="button" class="btn"><i class="fa fa-pinterest-p" aria-hidden="true"></i></button>
+        <button type="button" class="btn"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+        </div>   
+            
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container info">
+  <ul class="nav nav-pills nav-pills1 mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Additional information</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Review(1)</button>
+  </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      Duis tristique pulvinar enim sit amet facilisis. Sed venenatis tortor condimentum malesuada cursus. In ornare eget odio ac hendrerit. Phasellus leo odio, maximus a dui pellentesque, ornare tincidunt ante. Nullam venenatis tortor vitae scelerisque rhoncus. Sed ut suscipit ex, eget porta urna. Aenean tempor at ante non dapibus. Vivamus semper tellus a nulla blandit consectetur.<br>
+
+      Sed lobortis tristique velit ac congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam sit amet imperdiet mi.<br>
+
+      Quisque convallis accumsan laoreet. Integer fringilla malesuada nunc, quis sodales dolor euismod venenatis. Maecenas sollicitudin congue condimentum. Curabitur pharetra sapien eget tempor interdum. Cras ultrices, neque eget accumsan egestas, nisl lorem blandit elit, a convallis libero eros rhoncus purus. Mauris quis lacus at mauris tempor efficitur. Phasellus vulputate viverra tellus nec condimentum.<br>
+    </div>
+    <div class="tab-pane pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="line2"><strong>Weight   </strong><span>200 kg</span></div><br>
+        <div class="line2"><strong>Dimension</strong><span>5 × 7 × 10 cm</span></div><br>
+        <div class="line2"><strong>Color</strong><span>Black, White</span></div>
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+      <h5 class="py-4">1 review for Ceramic Mug</h5>
+      <div class="pane1 d-flex py-4 px-4">
+        <img src="7df6863017ccc29007d322abb0db1b5e.png">
+        <div class="left">
+        <h6>Dream Theme</h6>
+        <span>May 8,2020</span><br>
+        <small>dgads</small></div>
+        <div class="star">
+          <i class="fa fa-star star1" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="review py-5">
+        <h5>Add a review</h5>
+        <span>Your email address will not be published. Required fields are marked *</span><br>
+        <small class="py-5">Your rating*</small><br>
+        <button type="button" class="btn btn8"><i class="fa fa-star" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn8"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn8"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn8"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></button>
+        <button type="button" class="btn btn8"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></button><br>
+        <small class="py-5">Your review *</small>
+        <textarea class="form-control form-control1" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <small class="py-5">Name*</small>
+        <label for="exampleFormControlInput1" class="form-label"></label>
+        <input type="name" class="form-control" id="exampleFormControlInput1">
+        <small class="py-5">Email*</small>
+        <label for="exampleFormControlInput1" class="form-label"></label>
+        <input type="email" class="form-control" id="exampleFormControlInput1">
+        <button type="button" class="btn btn9">submit</button>
+      </div>
+    </div>
+
+    <div class="container Related py-5">
+      <h2>Related products</h2>
+      <div class="row image_2 py-4">
+        <div class="col-md-4 d-flex">
+          <img src="sh-035.jpg">
+          <div>
+          <h6>canvas bag</h6>
+          <span>$11.50<span class="d">$9.99</span></span><br>
+          <button type="button" class="btn btn9">Details</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex">
+          <img src="sh-073.jpg">
+          <div>
+          <h6>Eco bag</h6>
+          <span class="d">$4.50</span><br>
+          <button type="button" class="btn btn9">Details</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex">
+          <img src="sh-049.jpg">
+          <div>
+          <h6>Pepper Grinder</h6>
+          <span class="d">$17.90</span><br>
+          <button type="button" class="btn btn9">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid product1">
+  <div class="row py-5 px-5 white">
+    <div class="col-md-4 margin">
+      <h5><b>NEW PRODUCTS</b></h5>
+      <div class="d-flex products">
+        <img src="sh-024.jpg">
+        <div>
+          <strong>Organic Herbal Tree</strong><br>
+          <span>$15.50</span>
+        </div>
+      </div>
+
+      <div class="d-flex products">
+        <img src="sh-058.jpg">
+        <div>
+          <strong>Ceramic Mug</strong><br>
+          <i class="fa fa-star star2 star3" aria-hidden="true"></i>
+          <i class="fa fa-star star2" aria-hidden="true"></i>
+          <i class="fa fa-star star2" aria-hidden="true"></i>
+          <i class="fa fa-star star2" aria-hidden="true"></i>
+          <i class="fa fa-star star2" aria-hidden="true"></i><br>
+          <span>$9.50</span>
+        </div>
+      </div>
+
+      <div class="d-flex products">
+        <img src="sh-046.jpg">
+        <div>
+          <strong>Himalayan Rose salt</strong><br>
+          <span>$54.20</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <h5>RECENT REVIEWS</h5>
+        <div class="d-flex products">
+          <img src="sh-058.jpg">
+          <div>
+            <strong>Ceramic Mug</strong><br>
+            <i class="fa fa-star star2 star3" aria-hidden="true"></i>
+            <i class="fa fa-star star2" aria-hidden="true"></i>
+            <i class="fa fa-star star2" aria-hidden="true"></i>
+            <i class="fa fa-star star2" aria-hidden="true"></i>
+            <i class="fa fa-star star2" aria-hidden="true"></i><br>
+            <span>by Dream Theme</span>
+          </div>
+        </div>
+
+        <div class="d-flex products">
+          <img src="sh-020.jpg">
+          <div>
+            <strong>Ceramic Mug</strong><br>
+            <i class="fa fa-star star2 star3" aria-hidden="true"></i>
+            <i class="fa fa-star star2" aria-hidden="true"></i>
+            <i class="fa fa-star star2" aria-hidden="true"></i>
+            <i class="fa fa-star star2" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i><br>
+            <span>by Irina</span>
+          </div>
+        </div>
+
+        <div class="d-flex products">
+          <img src="sh-020.jpg">
+          <div>
+            <strong>Ceramic Mug</strong><br>
+            <i class="fa fa-star star2 star3" aria-hidden="true"></i>
+            <i class="fa fa-star star2" aria-hidden="true"></i>
+            <i class="fa fa-star star2" aria-hidden="true"></i>
+            <i class="fa fa-star star2" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i><br>
+            <span>by Miriam</span>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+      <h5>USEFUL INFO</h5>
+      <div class="accordion py-4 accordion1" id="accordionExample">
+        <div class="accordion-item accordion-item1">
+          <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Shipping
+          </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Suscipit purus vitae, hendrerit tortoreu rhoncus nulla, vitae laoreet estortor malesuada. Vestibulum porta pellentesque bibendum. In consequat, massa sit amet euismod consequat.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item accordion-item1">
+          <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Return Police
+          </button>
+          </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Vestibulum porta pellentesque bibendum. In consequat, massa sit amet euismod consequat, lectus augue vehicula odio, nec laoreet purus orci sit amet neque.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="accordion-item accordion-item1">
+          <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Contact
+          </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><i class="fa fa-phone" aria-hidden="true"></i>(424) 123-0045 , (424)123-0067
+                sales@yoursite.com
+                Monday – Friday 10 AM – 8 PM</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+  <div class="footer footer1">
+    <img src="skin11r.bottom-bar-logo-regular(3).png"> 
+    <small class="small"> Dream-Theme — truly <a href="#">premium WordPress themes</a>
+    </small>
+      <span class="span1"><a href="#">Support Portal</span></a>
+ 
+      <span class="span1"><a href="#">Typography</span></a>
+ 
+      <span class="span1"><a href="#">All widgets</span></a>
+ 
+      <span class="span1"><a href="#">Custom CSS</span></a>
+
+  </div>
+</div>
+<script type="text/javascript">
+
+function fun1(){
+ var price = document.getElementById("price").innerHTML;
+  var counter = document.getElementById("counter").innerHTML;
+  var total = Number(price)*Number(counter);
+  document.getElementById("output").innerHTML = "$"+total;
+  document.getElementById("cart").innerHTML = counter;
+}  
+  var decrease = document.getElementById('decrease');
+  var increase = document.getElementById('increase');
+  var counter = document.getElementById("counter");
+  var count = 0;
+
+  decrease.addEventListener("click",()=>{
+    count --;
+    counter.innerHTML = count
+  })
+
+   increase.addEventListener("click",()=>{
+    count ++;
+    counter.innerHTML = count
+  })
+
+  
+
+
+
+</script>
+
+</body>
+</html>
